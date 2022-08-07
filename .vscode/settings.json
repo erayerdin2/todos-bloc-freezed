@@ -17,4 +17,8 @@
     },
     "explorerExclude.backup": {},
     "licenser.license": "WTFPL",
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.organizeImports": true,
+    },
 }
