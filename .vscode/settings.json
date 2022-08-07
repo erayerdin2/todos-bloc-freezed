@@ -1,0 +1,20 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/*.iml": true,
+        ".dart_tool": true,
+        "android/gradle": true,
+        "android/**/gradlew*": true,
+        ".idea": true,
+        ".metadata": true,
+        ".packages": true,
+        "**/*.lock": true,
+    },
+    "explorerExclude.backup": {},
+    "licenser.license": "WTFPL",
+}
