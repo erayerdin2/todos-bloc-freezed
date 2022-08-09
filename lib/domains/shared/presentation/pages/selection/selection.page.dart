@@ -24,20 +24,19 @@ class SelectionPage extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () async {
-                await Navigator.of(context).pushNamed('/without_freezed/list');
+                await Navigator.of(context).pushNamed('/regular/list');
               },
               child: const Text('Without Freezed'),
             ),
             ElevatedButton(
               onPressed: () async {
-                await Navigator.of(context).pushNamed('/with_freezed/list');
+                await Navigator.of(context).pushNamed('/freezed/list');
               },
               child: const Text('With Freezed'),
             ),
             ElevatedButton(
               onPressed: () async {
-                await Navigator.of(context)
-                    .pushNamed('/with_freezed_delete/list');
+                await Navigator.of(context).pushNamed('/freezed_delete/list');
               },
               child: const Text('With Freezed + Delete'),
             ),

@@ -3,9 +3,9 @@
 // license that can be found in the LICENSE file.
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:todos_bloc_freezed/domains/freezed_delete/components/todo_card/todo_card.component.dart';
+import 'package:todos_bloc_freezed/domains/freezed_delete/logic/todo/todo_bloc.dart';
 import 'package:todos_bloc_freezed/domains/shared/data/models/todo/todo.model.dart';
-import 'package:todos_bloc_freezed/domains/with_freezed_delete/components/todo_card/todo_card.component.dart';
-import 'package:todos_bloc_freezed/domains/with_freezed_delete/logic/todo/todo_bloc.dart';
 
 class ListTodosPage extends StatelessWidget {
   const ListTodosPage({Key? key}) : super(key: key);
@@ -42,7 +42,7 @@ class ListTodosPage extends StatelessWidget {
                         itemBuilder: (context, index) =>
                             // this component actually does not come from
                             // the shared domain, it comes from
-                            // with_freezed_delete domain
+                            // freezed_delete domain
                             TodoCardComponent(todo: todos[index]),
                         separatorBuilder: (context, index) =>
                             const SizedBox(height: 8),
@@ -57,7 +57,7 @@ class ListTodosPage extends StatelessWidget {
                   onPressed: () async {
                     // get the content
                     final content = await Navigator.of(context)
-                        .pushNamed('/without_freezed/create');
+                        .pushNamed('/regular/create');
 
                     if (content == null) {
                       // if the content is null, show a message

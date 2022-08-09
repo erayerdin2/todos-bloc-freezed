@@ -4,8 +4,8 @@
 // license that can be found in the LICENSE file.
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:todos_bloc_freezed/domains/freezed_delete/logic/todo/todo_bloc.dart';
 import 'package:todos_bloc_freezed/domains/shared/data/models/todo/todo.model.dart';
-import 'package:todos_bloc_freezed/domains/with_freezed_delete/logic/todo/todo_bloc.dart';
 
 class TodoCardComponent extends StatelessWidget {
   final Todo todo;
