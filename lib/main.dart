@@ -5,8 +5,14 @@
 import 'package:flutter/material.dart';
 import 'package:todos_bloc_freezed/di.dart';
 import 'package:todos_bloc_freezed/domains/shared/presentation/pages/selection/selection.page.dart';
+import 'package:todos_bloc_freezed/domains/with_freezed/presentation/pages/create_todo/create_todo.page.dart'
+    as create_todo_with_freezed_page;
 import 'package:todos_bloc_freezed/domains/with_freezed/presentation/pages/list_todos/list_todos.page.dart'
     as list_todos_with_freezed_page;
+import 'package:todos_bloc_freezed/domains/with_freezed_delete/presentation/pages/create_todo/create_todo.page.dart'
+    as create_todo_with_freezed_delete_page;
+import 'package:todos_bloc_freezed/domains/with_freezed_delete/presentation/pages/list_todos/list_todos.page.dart'
+    as list_todos_with_freezed_delete_page;
 import 'package:todos_bloc_freezed/domains/without_freezed/presentation/pages/create_todo/create_todo.page.dart'
     as create_todo_without_freezed_page;
 import 'package:todos_bloc_freezed/domains/without_freezed/presentation/pages/list_todos/list_todos.page.dart'
@@ -30,12 +36,21 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         '/': (context) => const SelectionPage(),
+        // without freezed pages
         '/without_freezed/list': (context) =>
             const list_todos_without_freezed_page.ListTodosPage(),
         '/without_freezed/create': (context) =>
             const create_todo_without_freezed_page.CreateTodoPage(),
+        // with freezed pages
         '/with_freezed/list': (context) =>
             const list_todos_with_freezed_page.ListTodosPage(),
+        '/with_freezed/create': (context) =>
+            const create_todo_with_freezed_page.CreateTodoPage(),
+        // with freezed + delete event pages
+        '/with_freezed_delete/list': (context) =>
+            const list_todos_with_freezed_delete_page.ListTodosPage(),
+        '/with_freezed_delete/create': (context) =>
+            const create_todo_with_freezed_delete_page.CreateTodoPage(),
       },
       initialRoute: '/',
     );
