@@ -10,6 +10,7 @@
 		"PeterSchmalfeldt.explorer-exclude",
 		"FelixAngelov.bloc",
 		"ymotongpoo.licenser",
+		"hzgood.dart-data-class-generator",
 	],
 	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
 	"unwantedRecommendations": []

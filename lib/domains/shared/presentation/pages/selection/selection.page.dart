@@ -2,6 +2,10 @@
 // Use of this source code is governed by the WTFPL
 // license that can be found in the LICENSE file.
 
+// Copyright 2022 Eray Erdin.
+// Use of this source code is governed by the WTFPL
+// license that can be found in the LICENSE file.
+
 import 'package:flutter/material.dart';
 
 class SelectionPage extends StatelessWidget {
@@ -19,7 +23,9 @@ class SelectionPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () async {
+                await Navigator.of(context).pushNamed('/without_freezed/list');
+              },
               child: const Text('Without Freezed'),
             ),
             ElevatedButton(

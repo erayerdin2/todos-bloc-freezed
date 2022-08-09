@@ -3,9 +3,15 @@
 // license that can be found in the LICENSE file.
 
 import 'package:flutter/material.dart';
-import 'package:todos_bloc_freezed/domains/shared/pages/selection/selection.page.dart';
+import 'package:todos_bloc_freezed/di.dart';
+import 'package:todos_bloc_freezed/domains/shared/presentation/pages/selection/selection.page.dart';
+import 'package:todos_bloc_freezed/domains/without_freezed/presentation/pages/create_todo/create_todo.page.dart'
+    as create_todo_without_freezed_page;
+import 'package:todos_bloc_freezed/domains/without_freezed/presentation/pages/list_todos/list_todos.page.dart'
+    as list_todos_without_freezed_page;
 
 void main() {
+  setUpDI();
   runApp(const MyApp());
 }
 
@@ -22,6 +28,10 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         '/': (context) => const SelectionPage(),
+        '/without_freezed/list': (context) =>
+            const list_todos_without_freezed_page.ListTodosPage(),
+        '/without_freezed/create': (context) =>
+            const create_todo_without_freezed_page.CreateTodoPage(),
       },
       initialRoute: '/',
     );
