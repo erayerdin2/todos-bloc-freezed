@@ -15,7 +15,10 @@
 			],
 			"group": "build",
 			"label": "flutter: flutter pub run build_runner watch",
-			"detail": ""
+			"detail": "",
+			"runOptions": {
+				"runOn": "folderOpen",
+			}
 		}
 	]
 }
