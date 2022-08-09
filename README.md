@@ -4,6 +4,7 @@
 ![tested bloc version is 8.1.0](https://img.shields.io/badge/bloc-8.1.0-blue?style=flat-square)
 ![tested freezed version is 2.1.0](https://img.shields.io/badge/freezed-2.1.0-blue?style=flat-square)
 ![tested build_runner version is 2.1.0](https://img.shields.io/badge/build_runner-2.2.0-blue?style=flat-square)
+![tested platforms](https://img.shields.io/badge/platforms-android%20only-blue?style=flat-square)
 
 This repo contains some examples for using [Bloc](https://bloclibrary.dev/#/) with [Freezed](https://pub.dev/packages/freezed).
 
