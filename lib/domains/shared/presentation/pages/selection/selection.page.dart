@@ -29,7 +29,9 @@ class SelectionPage extends StatelessWidget {
               child: const Text('Without Freezed'),
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () async {
+                await Navigator.of(context).pushNamed('/with_freezed/list');
+              },
               child: const Text('With Freezed'),
             ),
             ElevatedButton(
